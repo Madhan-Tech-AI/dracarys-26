@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap";
+
+:root {
+  --size: 390;
+  --blur: 0px;
+  --mainOpacity: 1;
+  --color-white: #FFFFFF;
+  --color-black: #2B2B2B;
+  --color-yellow: #FFFB91;
+}
+
+@media all and (min-width: 650px) {
+  :root {
+    --size: 1500;
+  }
+}
+
+#dracarys-landing-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: #080b1d;
+  overflow: hidden;
+  pointer-events: auto;
+  transition: opacity 0.8s ease-out;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#dracarys-landing-overlay #canvas,
+#canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#canvas[data-astro-cid-j7pv25f6] {
+  opacity: 0;
+}
+
+.opening[data-astro-cid-rcvgigma] {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  z-index: 10;
+  font-family: 'Azeret Mono', monospace;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+.opening__content[data-astro-cid-rcvgigma] {
+  position: relative;
+  margin-bottom: 9rem;
+  opacity: 0;
+}
+
+.opening__bar[data-astro-cid-rcvgigma] {
+  position: absolute;
+  width: 100%;
+  height: .2rem;
+  bottom: -.2rem;
+  background: #fff;
+  transform-origin: left center;
+  transform: scaleX(0);
+}
+
+.h-ttu {
+  text-transform: uppercase;
+}
+
+.scene__root,
+.scene__info,
+.scene__info-overlay {
+  display: none !important;
+}

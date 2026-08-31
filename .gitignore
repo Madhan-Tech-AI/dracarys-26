@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+Dracarys-main/node_modules/
+
+# Build outputs (assets are maintained directly in /assets)
+dist/
+Dracarys-main/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local env files
+.env
+.env.local
+.env.*.local
