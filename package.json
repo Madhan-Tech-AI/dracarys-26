@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "serve -l 5173 .",
     "start": "serve -l 5173 .",
-    "build": "npm --prefix Dracarys-main install && npm --prefix Dracarys-main run build:integration",
+    "build": "npm --prefix Dracarys-main install && npm --prefix Dracarys-main run build:integration && node -e \"try { require('fs').rmSync('Dracarys-main/node_modules', { recursive: true, force: true }); } catch (e) {}\"",
     "build:site": "npm --prefix Dracarys-main run build:integration"
   }
 }
