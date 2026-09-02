@@ -15,256 +15,227 @@ interface Event {
 
 const events: Event[] = [
   {
-    id: 'data-maze',
-    name: 'Data Maze',
-    house: 'House Stark',
-    motto: 'Winter is Coming',
-    description: 'Navigate through complex data structures and algorithms. Only the sharpest minds survive the frozen challenges.',
+    id: 'iron-code',
+    name: 'The Iron Code — Blind Code',
+    house: 'House Greyjoy (Technical)',
+    motto: 'What is Dead May Never Die',
+    description: 'A coding challenge that tests participants’ programming and logical thinking skills without revealing the expected output. Participants must analyze the problem carefully and develop accurate solutions through code.',
     coordinators: [
-      { name: 'Akash Kumar Singh O', phone: '+91 73972 71303' },
-      { name: 'Madhan Kumar P', phone: '+91 93427 45299' }
+      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
+      { name: 'Jothisree', phone: '+91 99520 16905' },
+      { name: 'Oviya', phone: '+91 79046 50040' }
     ],
     color: 'from-blue-900 to-slate-800',
     icon: <Sword className="w-8 h-8" />
   },
   {
-    id: 'codex',
-    name: 'Codex',
-    house: 'House Lannister',
-    motto: 'Hear Me Roar!',
-    description: 'Golden coding challenges that separate the lions from the lambs. Show your programming prowess.',
+    id: 'secrets-citadel',
+    name: 'Secrets of the Citadel — Reverse X',
+    house: 'The Citadel (Technical)',
+    motto: 'Knowledge is Power',
+    description: 'A reverse-engineering challenge where participants uncover hidden logic and solve complex technical puzzles. Test your analytical skills, decode the clues, and break through the layers of the challenge.',
     coordinators: [
-      { name: 'Mohammed Tanveer K', phone: '+91 99520 16905' },
-      { name: 'Nithishwar J', phone: '+91 63696 06909' }
+      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
+      { name: 'Jaiganesh', phone: '+91 99520 16905' },
+      { name: 'Prathinga R', phone: '+91 79046 50040' }
     ],
     color: 'from-yellow-600 to-red-800',
     icon: <Crown className="w-8 h-8" />
   },
   {
-    id: 'slide-storm',
-    name: 'Slide Storm',
-    house: 'House Targaryen',
+    id: 'great-council',
+    name: 'The Great Council — PPT / Project Expo',
+    house: 'House Targaryen (Technical)',
     motto: 'Fire and Blood',
-    description: 'Present with the fury of dragons. Burn through presentations with passion and power.',
+    description: 'An opportunity to present innovative ideas, projects, and solutions before a panel of judges. Participants showcase their creativity, technical knowledge, and ability to communicate their project effectively.',
     coordinators: [
-      { name: 'Shabnam D', phone: '+91 73972 71303' },
-      { name: 'Poorani S', phone: '+91 93427 45299' }
+      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
+      { name: 'Jenifer', phone: '+91 99520 16905' },
+      { name: 'Mahalakshmi N', phone: '+91 79046 50040' }
     ],
     color: 'from-red-900 to-black',
     icon: <Flame className="w-8 h-8" />
   },
   {
-    id: 'proto-spark',
-    name: 'Proto Spark',
-    house: 'House Baratheon',
-    motto: 'Ours is the Fury',
-    description: 'Forge prototypes with the strength of storms. Innovation meets determination.',
+    id: 'builders-westeros',
+    name: 'Builders of Westeros — Vibe2Web',
+    house: 'House Stark (Technical)',
+    motto: 'Winter is Coming',
+    description: 'A creative web development challenge focused on transforming ideas into engaging and functional websites. Participants can showcase their design thinking, creativity, and web development skills.',
     coordinators: [
-      { name: 'Sanjai Karthikeyan S', phone: '+91 63796 09338' },
-      { name: 'Yeshwanth B', phone: '+91 79046 50040' }
+      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
+      { name: 'Shridhran', phone: '+91 99520 16905' },
+      { name: 'Manivendan', phone: '+91 79046 50040' }
     ],
-    color: 'from-yellow-500 to-orange-800',
+    color: 'from-teal-800 to-slate-900',
     icon: <Zap className="w-8 h-8" />
   },
   {
-    id: 'pixel-prompt',
-    name: 'Pixel Prompt',
-    house: 'House Greyjoy',
-    motto: 'What is Dead May Never Die',
-    description: 'Dive deep into AI prompting like the depths of the Iron Islands. Master the art of communication with machines.',
+    id: 'battle-blackwater',
+    name: 'The Battle of Blackwater — Shipwreck',
+    house: 'House Lannister (Non-Technical)',
+    motto: 'Hear Me Roar!',
+    description: 'A fun and exciting non-technical challenge that tests teamwork, creativity, strategy, and quick thinking.',
     coordinators: [
-      { name: 'Poorna Lakshmi S', phone: '+91 93427 45299' },
-      { name: 'Harini S', phone: '+91 73972 71303' }
+      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
+      { name: 'Santhosh Kumar S', phone: '+91 99520 16905' },
+      { name: 'Ranjith P', phone: '+91 79046 50040' }
     ],
-    color: 'from-teal-800 to-slate-900',
-    icon: <Image className="w-8 h-8" />
-  },
-  {
-    id: 'design-sphere',
-    name: 'Design Sphere',
-    house: 'House Tyrell',
-    motto: 'Growing Strong',
-    description: 'Bloom with creativity in design challenges. Beauty and functionality intertwined like roses.',
-    coordinators: [
-      { name: 'Kamalesh S', phone: '+91 93420 97741' },
-      { name: 'Rithika Joshi B', phone: '+91 93427 45299' }
-    ],
-    color: 'from-green-700 to-yellow-600',
-    icon: <Palette className="w-8 h-8" />
+    color: 'from-emerald-900 to-slate-900',
+    icon: <Flame className="w-8 h-8" />
   }
 ];
 
 const coreTeam = [
-  { role: 'President', name: 'Akash Kumar Singh O', contact: '+91 73972 71303' },
-  { role: 'Vice President', name: 'Poorani S', contact: '+91 63814 48766' },
-  { role: 'Treasurer', name: 'Madhan Kumar P', contact: '+91 93427 45299' },
+  { role: 'President', name: 'Yeshwanth', contact: '+91 79046 50040' },
+  { role: 'Vice President', name: 'Rithika', contact: '+91 96770 08833' },
+  { role: 'Treasurer', name: 'Santhosh', contact: '+91 73959 65434' },
+];
+
+const eventEnquiries = [
+  { name: 'Akash Kumar Singh', contact: '+91 73972 71303' },
+  { name: 'Tanveer', contact: '+91 99520 16905' },
+  { name: 'Yeshwanth', contact: '+91 79046 50040' },
 ];
 
 // Google Form placeholder – replace with actual link later
 const GOOGLE_FORM_URL = 'https://forms.gle/f6CKNjFFS2vQgrbU6';
 
-// Detailed rules per event (expand with more events as needed)
+// Detailed rules per event
 const eventRules: Record<string, any> = {
-  'data-maze': {
+  'iron-code': {
     meta: {
-      teamSize: '1–3 members (open to all departments).',
-      duration: '2 hrs 30 mins.',
-      tools: 'Python / R / Jupyter / Colab, Power BI / Tableau, AI coding assistants.'
+      teamSize: '1–2 members.',
+      duration: '1 hour.',
+      tools: 'C / C++ / Java / Python (Display monitor hidden during coding).'
     },
     tasks: [
-      'Clean dataset (handle missing values, duplicates, noise).',
-      'Create insightful visualizations.',
-      'Build & evaluate at least one ML model.',
-      'Present workflow, results, and insights.'
+      'Understand the problem statement and edge cases.',
+      'Type and write code blindly with screen turned off / hidden.',
+      'Compile and execute within limited trial attempts.'
     ],
     guidelines: [
-      '4 datasets provided; each team gets one randomly.',
-      'No external datasets or pre-trained models allowed.',
-      'Internet use limited to documentation/coding support.',
-      'Maintain discipline; misconduct leads to disqualification.'
+      'A coding challenge that tests participants’ programming and logical thinking skills without revealing the expected output.',
+      'Participants must analyze the problem carefully and develop accurate solutions through code.',
+      'No internet, notes, or external coding assistance allowed.',
+      'Malpractice or misconduct leads to immediate disqualification.'
     ],
     judging: [
-      'Data Cleaning – 20%',
-      'Visualization – 25%',
-      'Model Accuracy – 30%',
-      'Presentation – 15%',
-      'Time Management – 10%'
+      'Code Accuracy & Correctness – 50%',
+      'Logic & Approach – 30%',
+      'Time of Completion – 20%'
     ],
     deliverables: [
-      'Cleaned dataset',
-      'Visualizations (report/notebook/Power BI)',
-      'Model code + accuracy',
-      'Final presentation slides'
+      'Source code file',
+      'Successful test-case execution'
     ]
   },
-  'slide-storm': {
+  'secrets-citadel': {
     meta: {
-      teamSize: '1–3 members (open to all departments).',
-      duration: '4–5 minutes presentation + Q&A.',
-      tools: 'PPT/Keynote/Google Slides; laser pointer optional.'
-    },
-    tasks: [],
-    guidelines: [
-      'Paper must be original and based on technical/research topics.',
-      'Clearly present problem statement, methodology, and conclusion.',
-      'Presentation should be clear, concise, and structured.'
-    ],
-    judging: [
-      'Presentation – 40%',
-      'Team Coordination – 20%',
-      'PPT Quality – 30%',
-      'Q&A – 10%'
-    ],
-    deliverables: [],
-    rules: [
-      'Stick to allotted time.',
-      'Maintain discipline; jury’s decision is final.',
-      'Arguments with jury lead to disqualification.'
-    ]
-  },
-  'pixel-prompt': {
-    meta: {
-      teamSize: 'Solo (1 participant only).',
-      duration: '50 mins (Setup – 5, Prompt – 15, Image – 25, Submission – 5).',
-      tools: 'Any AI image generation tool (Internet allowed for tool usage only).'
+      teamSize: '1–2 members.',
+      duration: '1 hour.',
+      tools: 'Analytical and debugging tools provided.'
     },
     tasks: [
-      'Prompt creation → Image generation → Documentation → Submission.'
+      'Analyze obfuscated logic puzzles and reverse outputs.',
+      'Reverse-engineer the underlying algorithms.',
+      'Decode the clues and submit final answers.'
     ],
     guidelines: [
-      'One keyword will be assigned randomly.',
-      'Tools: Any AI image generation tool (Internet allowed for tool usage only).'
-    ],
-    restrictions: [
-      'Prompts must be original.',
-      'No prompt generators, pre-written templates, or copying.',
-      'Internet use strictly for AI tool access.',
-      'Misconduct or plagiarism leads to disqualification.'
+      'A reverse-engineering challenge where participants uncover hidden logic and solve complex technical puzzles.',
+      'Test your analytical skills, decode the clues, and break through the layers of the challenge.',
+      'Maintain discipline; jury’s decision is final.'
     ],
     judging: [
-      'Accuracy to Keyword – 40%',
-      'Image Quality & Details – 30%',
-      'Prompt Length & Complexity – 15%',
-      'Time Management – 15%'
+      'Clue Decoding & Accuracy – 40%',
+      'Speed & Methodology – 35%',
+      'Problem Solving – 25%'
     ],
     deliverables: [
-      'Original Prompt (Word/PDF)',
-      'Generated Image (JPG/PNG)',
-      'Keyword Documentation',
-      'Optional Explanation',
-      'Note: Jury’s decision is final.'
+      'Solved clue / flag',
+      'Brief explanation of methodology'
     ]
   },
-  'proto-spark': {
+  'great-council': {
     meta: {
-      teamSize: '1–4 members (cross-department teams allowed).',
-      duration: 'Setup time: 15 mins | Event: 6 hours (Full Day).',
-      tools: 'Open to any tech stack. Teams responsible for their own hardware; internet provided.'
+      teamSize: '1–3 members (open to all departments).',
+      duration: '8–10 mins presentation + 5 mins Q&A.',
+      tools: 'PPT / Keynote / Google Slides, working hardware/software prototype.'
     },
-    categories: [
-      'Software (Web, Mobile, AI/ML, Games)',
-      'Hardware/IoT (Robotics, Automation, Sensors)',
-      'Web & Digital Solutions (E-commerce, APIs, CMS)',
-      'Emerging Tech (Blockchain, AR/VR, Cybersecurity, Cloud)'
+    tasks: [
+      'Present innovative ideas, projects, and solutions before a panel of judges.',
+      'Demonstrate prototype functionality and practical value.',
+      'Defend ideas and implementation during Q&A.'
     ],
     guidelines: [
-      'Projects must be at least 70% complete & functional.',
-      'Source code + documentation required.',
-      'Presentation: 8–10 mins + 5 mins Q&A + Live demo.',
-      'Teams responsible for own hardware; internet provided.'
+      'An opportunity to present innovative ideas, projects, and solutions before a panel of judges.',
+      'Participants showcase their creativity, technical knowledge, and ability to communicate their project effectively.',
+      'Paper and project must be original technical or research work.'
     ],
     judging: [
-      'Innovation & Creativity – 25',
-      'Technical Implementation – 25',
-      'Functionality & Usability – 20',
-      'Problem Solving – 15',
-      'Presentation & Communication – 10',
-      'Documentation – 5'
-    ],
-    awards: [
-      'Best Overall Project (1st, 2nd, 3rd + Cash Prizes)',
-      'Special Awards: Best Innovation, Best Technical Implementation, Best UI/UX, Best Hardware, People’s Choice, Best Presentation.'
-    ],
-    disqualification: [
-      'Plagiarism / copied projects.',
-      'Non-functional or incomplete demos.',
-      'Misconduct, false ownership, or offensive content.',
-      'Failure to present or provide source code.'
+      'Innovation & Originality – 30%',
+      'Technical Implementation – 30%',
+      'Presentation & Communication – 25%',
+      'Q&A Handling – 15%'
     ],
     deliverables: [
-      'Before Event (48 hrs): Abstract, team details, tech stack, setup needs.',
-      'On Event Day: Source code, documentation, slides, (optional demo video/report).'
-    ],
-    schedule: [
-      '9–10 AM: Registration & Setup',
-      '10–12 PM: Round 1 Judging',
-      '1–2 PM: Round 2 Judging',
-      '2–5 PM: Public Exhibition',
-      '5–6 PM: Award Ceremony'
-    ],
-    notes: ['Jury’s decision is final. Projects may be featured online.']
+      'Presentation slide deck',
+      'Project abstract and documentation',
+      'Working demo (if applicable)'
+    ]
   },
-  'design-sphere': {
+  'builders-westeros': {
     meta: {
-      teamSize: '1–3 members (open to all departments)',
-      duration: '4–5 mins presentation + Q&A',
-      tools: 'Any design tools (Figma, Adobe XD, Sketch, etc.)'
+      teamSize: '1–3 members.',
+      duration: '2 hours.',
+      tools: 'HTML, CSS, JavaScript, React, Tailwind or any modern web stack.'
     },
+    tasks: [
+      'Receive theme/prompt at event start.',
+      'Design and build a responsive, functional website.',
+      'Present live website demonstration to judges.'
+    ],
     guidelines: [
-      'Designs must be original & prepared beforehand.',
-      'Clearly define problem statement & design approach.',
-      'Presentation should be clear, functional, and innovative.'
+      'A creative web development challenge focused on transforming ideas into engaging and functional websites.',
+      'Participants can showcase their design thinking, creativity, and web development skills.',
+      'Emphasis on responsiveness, clean UI, and intuitive user experience.'
     ],
     judging: [
-      'Design – 50%',
-      'Functionality – 20%',
-      'Presentation – 20%',
-      'Q&A – 10%'
+      'UI/UX & Aesthetics – 40%',
+      'Functionality & Responsiveness – 30%',
+      'Creativity & Theme Alignment – 20%',
+      'Code Quality – 10%'
     ],
-    rules: [
-      'Stick to allotted time.',
-      'Maintain discipline; jury’s decision is final.',
-      'Plagiarism/copying will lead to disqualification.'
+    deliverables: [
+      'Source code repository',
+      'Live website demo'
+    ]
+  },
+  'battle-blackwater': {
+    meta: {
+      teamSize: 'Solo or 2 members.',
+      duration: '45 mins.',
+      tools: 'Spontaneity, wit, and persuasiveness.'
+    },
+    tasks: [
+      'Assume assigned persona aboard a sinking ship.',
+      'Convince the captain why you deserve the single remaining survival jacket.',
+      'Answer quick-fire rebuttals from the judges.'
+    ],
+    guidelines: [
+      'A fun and exciting non-technical challenge that tests teamwork, creativity, strategy, and quick thinking.',
+      'Maintain humor and decorum without personal or offensive remarks.',
+      'Jury’s verdict is final.'
+    ],
+    judging: [
+      'Spontaneity & Wit – 40%',
+      'Persuasiveness & Rhetoric – 30%',
+      'Creativity & Humor – 20%',
+      'Audience Engagement – 10%'
+    ],
+    deliverables: [
+      'Character defense presentation',
+      'Rebuttal handling'
     ]
   }
 };
@@ -487,7 +458,7 @@ function App() {
 
             <div className="mt-8 flex items-center justify-between flex-wrap gap-4">
               <div className="text-sm text-gold-300">For queries, contact the coordinators listed on the event card.</div>
-              <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer" className="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-500 text-white font-semibold">Join the House</a>
+              <button onClick={goToRegister} className="px-6 py-3 rounded-lg bg-red-600 hover:bg-red-500 text-white font-semibold">Join the House</button>
             </div>
           </div>
         </div>
@@ -564,12 +535,23 @@ function App() {
                 </div>
                 <div className="p-4 grid md:grid-cols-2 gap-6">
                   {events.map((e) => (
-                    <div key={e.id} className="p-5 rounded-lg bg-black/30 border border-red-900/40">
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-red-400 font-bold text-xl">{e.name}</h3>
-                        <div className="text-gold-300 text-sm">{e.house}</div>
+                    <div key={e.id} className="p-5 rounded-lg bg-black/30 border border-red-900/40 flex flex-col justify-between">
+                      <div>
+                        <div className="flex items-center justify-between mb-2">
+                          <h3 className="text-red-400 font-bold text-xl">{e.name}</h3>
+                          <div className="text-gold-300 text-sm">{e.house}</div>
+                        </div>
+                        <p className="text-gold-200 text-sm leading-relaxed mb-4">{e.description}</p>
                       </div>
-                      <p className="text-gold-200 text-sm">{e.description}</p>
+                      <div className="pt-3 border-t border-red-900/30">
+                        <div className="text-xs font-semibold text-gold-300 mb-1">Coordinators:</div>
+                        {e.coordinators.map((c, i) => (
+                          <div key={i} className="text-xs flex justify-between text-gold-200 py-0.5">
+                            <span>{c.name}</span>
+                            <span className="font-mono text-red-300">{c.phone}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -766,7 +748,7 @@ function App() {
         <div className="container mx-auto px-4 max-w-7xl">
           <h2 className={`text-4xl md:text-6xl font-bold text-center mb-16 ${'text-gold-400'
             }`} style={{ fontFamily: 'serif' }}>
-            The Six Great Houses
+            The Five Great Realms & Events
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -774,51 +756,54 @@ function App() {
               <div
                 key={event.id}
                 className={`group relative overflow-hidden rounded-lg transition-all duration-300 hover:scale-105 transform ${'bg-black/50 border border-red-900/30 hover:border-gold-400/50'
-                  } backdrop-blur-sm hover:shadow-2xl`}
+                  } backdrop-blur-sm hover:shadow-2xl flex flex-col justify-between`}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${event.color} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
 
-                <div className="relative p-6 z-10">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className={`p-3 rounded-full bg-gold-400/20`}>
-                      {event.icon}
-                    </div>
-                    <div className={`text-right text-sm text-gold-300`}>
-                      {event.house}
-                    </div>
-                  </div>
-
-                  <h3 className={`text-2xl font-bold mb-2 text-red-400`}>
-                    {event.name}
-                  </h3>
-
-                  <p className={`text-sm font-semibold mb-3 italic text-gold-400`}>
-                    "{event.motto}"
-                  </p>
-
-                  <p className={`text-sm mb-4 leading-relaxed text-gold-200`}>
-                    {event.description}
-                  </p>
-
-                  <div className="mb-4">
-                    <h4 className={`font-semibold mb-2 text-gold-300`}>
-                      Coordinators:
-                    </h4>
-                    {event.coordinators.map((coordinator, index) => (
-                      <div key={index} className={`text-sm flex justify-between text-gold-200`}>
-                        <span>{coordinator.name}</span>
-                        <span className="font-mono">{coordinator.phone}</span>
+                <div className="relative p-6 z-10 flex flex-col h-full justify-between">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className={`p-3 rounded-full bg-gold-400/20`}>
+                        {event.icon}
                       </div>
-                    ))}
+                      <div className={`text-right text-sm text-gold-300`}>
+                        {event.house}
+                      </div>
+                    </div>
+
+                    <h3 className={`text-2xl font-bold mb-2 text-red-400`}>
+                      {event.name}
+                    </h3>
+
+                    <p className={`text-sm font-semibold mb-3 italic text-gold-400`}>
+                      "{event.motto}"
+                    </p>
+
+                    <p className={`text-sm mb-4 leading-relaxed text-gold-200`}>
+                      {event.description}
+                    </p>
                   </div>
 
-                  <button
-                    onClick={() => goToEvent(event.id)}
-                    className={`w-full block text-center py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 transform ${'bg-red-600 text-white hover:bg-red-500'
-                      }`}
-                  >
-                    Join This House
-                  </button>
+                  <div>
+                    <div className="mb-4 pt-3 border-t border-red-900/30">
+                      <h4 className={`font-semibold mb-2 text-gold-300`}>
+                        Coordinators:
+                      </h4>
+                      {event.coordinators.map((coordinator, index) => (
+                        <div key={index} className={`text-sm flex justify-between text-gold-200 py-0.5`}>
+                          <span>{coordinator.name}</span>
+                          <span className="font-mono text-red-300">{coordinator.phone}</span>
+                        </div>
+                      ))}
+                    </div>
+
+                    <button
+                      onClick={goToRegister}
+                      className={`w-full block text-center py-3 rounded-lg font-semibold transition-all duration-300 hover:scale-105 transform bg-red-600 text-white hover:bg-red-500`}
+                    >
+                      Join This House
+                    </button>
+                  </div>
                 </div>
               </div>
             ))}
@@ -830,61 +815,88 @@ function App() {
 
       {/* Contact Section */}
       <section id="contact" className={`py-20 bg-gradient-to-b from-slate-900 to-black`}>
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className={`text-4xl md:text-6xl font-bold text-center mb-16 ${'text-gold-400'
             }`} style={{ fontFamily: 'serif' }}>
             Summon the Ravens
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className={`bg-black/30 border-red-900/50 border-2 rounded-lg p-8 backdrop-blur-sm`}>
-              <h3 className={`text-2xl font-bold mb-6 text-red-400`}>
-                The Citadel
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-4">
-                  <MapPin className={`w-6 h-6 text-gold-400`} />
-                  <div>
-                    <div className={`font-semibold text-gold-300`}>
-                      Department of Artificial Intelligence & Data Science
-                    </div>
-                    <div className={`text-gold-200`}>
-                      [Gojan School of Business and Technology], [Edapalayam, Redhills]
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={`bg-black/30 border-red-900/50 border-2 rounded-lg p-8 backdrop-blur-sm flex flex-col justify-between`}>
+              <div>
+                <h3 className={`text-2xl font-bold mb-6 text-red-400`}>
+                  The Citadel
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-4">
+                    <MapPin className={`w-6 h-6 text-gold-400 flex-shrink-0`} />
+                    <div>
+                      <div className={`font-semibold text-gold-300`}>
+                        Department of Artificial Intelligence & Data Science
+                      </div>
+                      <div className={`text-gold-200 text-sm`}>
+                        Gojan School of Business and Technology, Edapalayam, Redhills
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <Calendar className={`w-6 h-6 text-gold-400`} />
-                  <div>
-                    <div className={`font-semibold text-gold-300`}>
-                      26 September 2026
-                    </div>
-                    <div className={`text-gold-200`}>
-                      The day of reckoning arrives
+                  <div className="flex items-center space-x-4">
+                    <Calendar className={`w-6 h-6 text-gold-400 flex-shrink-0`} />
+                    <div>
+                      <div className={`font-semibold text-gold-300`}>
+                        26 September 2026
+                      </div>
+                      <div className={`text-gold-200 text-sm`}>
+                        The day of reckoning arrives
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className={`bg-black/30 border-red-900/50 border-2 rounded-lg p-8 backdrop-blur-sm`}>
-              <h3 className={`text-2xl font-bold mb-6 text-red-400`}>
-                The Maesters
-              </h3>
-              <div className="space-y-4">
-                {coreTeam.slice(0, 3).map((member, index) => (
-                  <div key={index} className="flex items-center space-x-4">
-                    <Phone className={`w-5 h-5 text-gold-400`} />
-                    <div>
-                      <div className={`font-semibold text-gold-300`}>
-                        {member.name} ({member.role})
-                      </div>
-                      <div className={`text-gold-200`}>
-                        {member.contact}
+            <div className={`bg-black/30 border-red-900/50 border-2 rounded-lg p-8 backdrop-blur-sm flex flex-col justify-between`}>
+              <div>
+                <h3 className={`text-2xl font-bold mb-6 text-red-400`}>
+                  The Maesters
+                </h3>
+                <div className="space-y-4">
+                  {coreTeam.slice(0, 3).map((member, index) => (
+                    <div key={index} className="flex items-center space-x-4">
+                      <Phone className={`w-5 h-5 text-gold-400 flex-shrink-0`} />
+                      <div>
+                        <div className={`font-semibold text-gold-300`}>
+                          {member.name} ({member.role})
+                        </div>
+                        <a href={`tel:${member.contact.replace(/\s+/g, '')}`} className={`text-gold-200 hover:text-red-400 transition-colors text-sm font-mono`}>
+                          {member.contact}
+                        </a>
                       </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className={`bg-black/30 border-red-900/50 border-2 rounded-lg p-8 backdrop-blur-sm flex flex-col justify-between`}>
+              <div>
+                <h3 className={`text-2xl font-bold mb-6 text-red-400`}>
+                  Event Enquiries
+                </h3>
+                <div className="space-y-4">
+                  {eventEnquiries.map((person, index) => (
+                    <div key={index} className="flex items-center space-x-4">
+                      <Phone className={`w-5 h-5 text-gold-400 flex-shrink-0`} />
+                      <div>
+                        <div className={`font-semibold text-gold-300`}>
+                          {person.name}
+                        </div>
+                        <a href={`tel:${person.contact.replace(/\s+/g, '')}`} className={`text-gold-200 hover:text-red-400 transition-colors text-sm font-mono`}>
+                          {person.contact}
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
