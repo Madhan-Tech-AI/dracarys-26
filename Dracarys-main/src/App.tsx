@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Flame, Sword, Crown, Zap, Image, Palette, MapPin, Phone, Calendar, X } from 'lucide-react';
+import { Flame, Sword, MapPin, Phone, Calendar, X } from 'lucide-react';
 import REGISTRATION_QR from './registration-qr.png';
 
 interface Event {
@@ -28,20 +28,7 @@ const events: Event[] = [
     color: 'from-blue-900 to-slate-800',
     icon: <Sword className="w-8 h-8" />
   },
-  {
-    id: 'secrets-citadel',
-    name: 'Secrets of the Citadel — Reverse X',
-    house: 'The Citadel (Technical)',
-    motto: 'Knowledge is Power',
-    description: 'A reverse-engineering challenge where participants uncover hidden logic and solve complex technical puzzles. Test your analytical skills, decode the clues, and break through the layers of the challenge.',
-    coordinators: [
-      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
-      { name: 'Jaiganesh', phone: '+91 99520 16905' },
-      { name: 'Prathinga R', phone: '+91 79046 50040' }
-    ],
-    color: 'from-yellow-600 to-red-800',
-    icon: <Crown className="w-8 h-8" />
-  },
+
   {
     id: 'great-council',
     name: 'The Great Council — PPT / Project Expo',
@@ -56,20 +43,7 @@ const events: Event[] = [
     color: 'from-red-900 to-black',
     icon: <Flame className="w-8 h-8" />
   },
-  {
-    id: 'builders-westeros',
-    name: 'Builders of Westeros — Vibe2Web',
-    house: 'House Stark (Technical)',
-    motto: 'Winter is Coming',
-    description: 'A creative web development challenge focused on transforming ideas into engaging and functional websites. Participants can showcase their design thinking, creativity, and web development skills.',
-    coordinators: [
-      { name: 'Akash Kumar Singh', phone: '+91 73972 71303' },
-      { name: 'Shridhran', phone: '+91 99520 16905' },
-      { name: 'Manivendan', phone: '+91 79046 50040' }
-    ],
-    color: 'from-teal-800 to-slate-900',
-    icon: <Zap className="w-8 h-8" />
-  },
+
   {
     id: 'battle-blackwater',
     name: 'The Battle of Blackwater — Shipwreck',
@@ -98,8 +72,7 @@ const eventEnquiries = [
   { name: 'Yeshwanth', contact: '+91 79046 50040' },
 ];
 
-// Google Form placeholder – replace with actual link later
-const GOOGLE_FORM_URL = 'https://forms.gle/f6CKNjFFS2vQgrbU6';
+
 
 // Detailed rules per event
 const eventRules: Record<string, any> = {
@@ -130,32 +103,7 @@ const eventRules: Record<string, any> = {
       'Successful test-case execution'
     ]
   },
-  'secrets-citadel': {
-    meta: {
-      teamSize: '1–2 members.',
-      duration: '1 hour.',
-      tools: 'Analytical and debugging tools provided.'
-    },
-    tasks: [
-      'Analyze obfuscated logic puzzles and reverse outputs.',
-      'Reverse-engineer the underlying algorithms.',
-      'Decode the clues and submit final answers.'
-    ],
-    guidelines: [
-      'A reverse-engineering challenge where participants uncover hidden logic and solve complex technical puzzles.',
-      'Test your analytical skills, decode the clues, and break through the layers of the challenge.',
-      'Maintain discipline; jury’s decision is final.'
-    ],
-    judging: [
-      'Clue Decoding & Accuracy – 40%',
-      'Speed & Methodology – 35%',
-      'Problem Solving – 25%'
-    ],
-    deliverables: [
-      'Solved clue / flag',
-      'Brief explanation of methodology'
-    ]
-  },
+
   'great-council': {
     meta: {
       teamSize: '1–3 members (open to all departments).',
@@ -184,33 +132,7 @@ const eventRules: Record<string, any> = {
       'Working demo (if applicable)'
     ]
   },
-  'builders-westeros': {
-    meta: {
-      teamSize: '1–3 members.',
-      duration: '2 hours.',
-      tools: 'HTML, CSS, JavaScript, React, Tailwind or any modern web stack.'
-    },
-    tasks: [
-      'Receive theme/prompt at event start.',
-      'Design and build a responsive, functional website.',
-      'Present live website demonstration to judges.'
-    ],
-    guidelines: [
-      'A creative web development challenge focused on transforming ideas into engaging and functional websites.',
-      'Participants can showcase their design thinking, creativity, and web development skills.',
-      'Emphasis on responsiveness, clean UI, and intuitive user experience.'
-    ],
-    judging: [
-      'UI/UX & Aesthetics – 40%',
-      'Functionality & Responsiveness – 30%',
-      'Creativity & Theme Alignment – 20%',
-      'Code Quality – 10%'
-    ],
-    deliverables: [
-      'Source code repository',
-      'Live website demo'
-    ]
-  },
+
   'battle-blackwater': {
     meta: {
       teamSize: 'Solo or 2 members.',
@@ -295,9 +217,7 @@ function App() {
   const goToRegister = () => {
     window.location.hash = '/register';
   };
-  const goToEvent = (id: string) => {
-    window.location.hash = `/event/${id}`;
-  };
+
 
   const EventDetailPage = ({ eventId }: { eventId: string }) => {
     const event = events.find(e => e.id === eventId);
