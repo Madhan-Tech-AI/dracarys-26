@@ -597,21 +597,30 @@ function App() {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 justify-center items-center">
             <button
               onClick={goToRegister}
-              className={`px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform ${'bg-gradient-to-r from-red-600 to-red-800 text-white hover:from-red-500 hover:to-red-700 shadow-lg shadow-red-900/50'
+              className={`px-6 sm:px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform ${'bg-gradient-to-r from-red-600 to-red-800 text-white hover:from-red-500 hover:to-red-700 shadow-lg shadow-red-900/50'
                 }`}
             >
               🔥 Join the War - Register Now
             </button>
             <button
               onClick={() => scrollToSection('events')}
-              className={`px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform border-2 ${'border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black'
+              className={`px-6 sm:px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform border-2 ${'border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black'
                 }`}
             >
               ⚔️ Explore Events
             </button>
+            <a
+              href="https://drive.google.com/file/d/1CDE1bCDWcSGHJwqvgNvwClvtqN3mnWZy/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`px-6 sm:px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 hover:scale-105 transform border-2 text-center inline-flex items-center justify-center gap-2 ${'border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-black'
+                }`}
+            >
+              📜 View Event Rule Book
+            </a>
           </div>
         </div>
       </section>
